@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.active {
+	/*fill: red;*/
+  stroke: #fff;
+  stroke-width: 1.5px;
+	opacity: 1 !important; 
+}
+
+.country {
+  stroke: #ccc;
+  stroke-width: 1px;
+}
+
+path {
+	fill: #04383F;
+	opacity: 0.3;
+}
+
+.Norte {
+	fill: #04383F;
+}
+
+.Nordeste {
+	fill: #BE9B72;
+}
+
+.Centro-Oeste {
+	fill: #0A573A;
+}
+
+.Sul {
+	fill: #8B3A18;
+}
+
+.Sudeste {
+	fill: #2B585A;
+}
+
+
+</style>
+<body>
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="//d3js.org/topojson.v1.min.js"></script>
+<script src="//d3js.org/queue.v1.min.js"></script>
+<script>
+
+var width = 1200,
+    height = 1000,
+    regiao = [
+      {sigla:"NO", cor:"#04383F", nome:"Norte"},
+      {sigla:"NE", cor:"#BE9B72", nome:"Nordeste"},
+      {sigla:"CO", cor:"#0A573A", nome:"Centro-Oeste"},
+      {sigla:"SE", cor:"#2B585A", nome:"Sudeste"},
+      {sigla:"SU", cor:"#8B3A18", nome:"Sul"}
+    ];
+
+var projection = 
+	d3.geo.mercator()
+		.center([-55,-15])
+    .scale(900)
+    .translate([width / 2 - 200, height / 2 - 50]);
+
+var path =
+	d3.geo.path()
+  	.projection(projection);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+var gCountry =
+  svg.append("g")
+    .classed("country", true);
+
+var gLegenda =
+  svg.append("g");
+    // .classed("g2", true);
+
+var gLegendaText =
+  svg.append("g");
+    // .classed("g3", true);
+
+
+// --- Carrega mapa ---
+// d3.json("topojson_estados_brasil.json", function(error, data) {
+d3.json("mapa_estados.json", function(error, data) {
+    if (error) return console.error(error);
+	  var subunits = topojson.feature(data, data.objects.BRA_adm1);
+
+    // --- Desenha título ---
+    var title = svg
+      .append("text")
+        .attr("x", 15)
+        .attr("y", 50)
+        .attr("font-weight", "bold")
+        .attr("font-size", "28px")
+        .text("Censo Escolar 2015 (INEP)");
+    title.append("tspan")
+        .text("Dados referentes ao percentual de alunos matriculados no Ensino Médio")
+        .attr("x",30)
+        .attr("font-size", "16px")
+        .attr("dy","18px");
+
+
+    // --- Desenha mapa dos estados ---
+    gCountry.selectAll(".subunit")
+      .data(subunits.features)
+      .enter()
+        .append("path")
+          .attr("id", function(d) { return d.properties.HASC_1.substring(3); })
+          .attr("class", function(d) { return d.properties.REGIAO; })
+          .classed("subunit", true)
+          .attr("d", path)
+          .on("click", selectState)
+          .on("mouseover", function(d) { d3.select(this).style("opacity", "1"); } )
+          .on("mouseleave", function(d) { d3.select(this).style("opacity", null); } );
+
+
+    // --- Desenha box das regiões ---
+
+    gLegenda.selectAll("circle")
+        .data(regiao)
+        .enter()
+        .append("circle")
+          .attr("fill", function(d){ return d.cor })
+          .attr("r", 10)
+          .attr("cx", 90)
+          .attr("cy", function (d,i) {
+              return height / 2 + 25*i;
+          })
+          .attr("class", function(d){ return d.nome })
+          .on("click", selectRegion);
+    
+    gLegendaText.selectAll("text")
+        .data(regiao)
+        .enter()
+        .append("text")
+        .attr("width", 100)
+        .attr("x", 105)
+        .attr("y", function (d,i) {
+            return height / 2 + 25*i;
+        })
+        .attr("class", function(d){ return d.nome })
+        .on("click", selectRegion)
+        .text(function(d){ return d.nome; });
+
+
+
+   // --- Desenha o box cinza ---
+    svg
+      .append("rect")
+        .attr("width", 340)
+        .attr("height", 800)
+        .attr("x", 830)
+        .attr("y", 50)
+        .attr("fill", "#ccc")
+        .attr("rx", 15)
+        .attr("ry", 15);
+
+
+    svg
+      .append("rect")
+        .attr("width", 200)
+        .attr("height", 50)
+        .attr("x", 900)
+        .attr("y", 25)
+        .attr("stroke", "green")
+        .attr("fill", "#ddd");
+    
+    svg
+      .append("text")
+        .attr("width", 300)
+        .attr("height", 50)
+        .attr("x", 1000)
+        .attr("y", 50)
+        .attr("text-anchor", "middle")
+        .attr("alignment-baseline", "central")
+        .attr("id", "box-title")
+        .style("font-weight", "bold");
+
+
+
+   // --- "Desenha" texto que resume o funcionamento da visualização ---
+    
+   svg.append("rect")
+    .attr("stroke", "#ccc")
+    .attr("stroke-width", "5px")
+    .attr("fill", "#fff")
+    .attr("fill-opacity", 0)
+    .attr("width", 1100)
+    .attr("height", 120)
+    .attr("x", 7)
+    .attr("y", 820)
+    .attr("rx", 15)
+    .attr("ry", 15);
+
+    var textExplanation = svg
+      .append("text")
+        .attr("width", 300)
+        .attr("height", 50)
+        .attr("font-size", "14px")
+        .attr("x", 20)
+        .attr("y", 850)
+        .text("Os percentuais são exibidos no box cinza ao lado, da seguinte forma:");
+    textExplanation.append("tspan")
+        .text("Linha verde: média nacional;")
+        .attr("x",30)
+        .attr("dy","22px");
+    textExplanation.append("tspan")
+        .text("Linha azul: média do estado (*) ou região selecionada;")
+        .attr("x",30)
+        .attr("dy","16px");
+    textExplanation.append("tspan")
+        .text("(*) quando realizar a seleção de um estado, será exibida linha amarela que indica a média da região a qual o mesmo pertence.")
+        .attr("font-size", "12px")
+        .attr("x",20)
+        .attr("dy","22px");
+
+
+
+
+
+});
+
+
+// Função para marcar percentual em cada "PercentBox"
+function drawPercent(x,y,pos,cor,up,fixed=false) {
+  var scale_bar = d3.scale.linear().domain([0,100]).range([0,300]);
+  var height = 40;
+  var positionX = x + scale_bar(pos)
+  var line = svg.append("line")
+	  .style("stroke", cor)
+	  .style("stroke-width",2)
+		.attr("x1",positionX)
+	  .attr("y1",y)
+		.attr("x2",positionX)
+	  .attr("y2",y - height)
+    .classed("l", !fixed);
+
+  var circlePosY = up ? (y - height - 2) : (y + 2);
+  var radius = fixed ? 4 : 2;
+
+  var circle = svg.append("circle")
+    .attr("fill", cor)
+    .attr("cx", positionX)
+    .attr("cy", circlePosY)
+    .attr("r", radius)
+    .classed("l", !fixed);
+
+}
+
+
+// Função para desenhar boxes que receberão percentuais
+function drawPercentBox(x,y,text=""){
+  var go = svg.append("g");
+    
+  if(text){
+    go.append("text")
+      .text(text)
+      .attr("x",x + 150)
+      .attr("y",y - 55)
+      .attr("text-anchor", "middle")
+      .attr("alignment-baseline", "central");
+  }
+  go.append("rect")
+      .attr("x",x)
+      .attr("y",y - 40)
+      .attr("rx", 5)
+      .attr("ry", 5)
+      .attr("width", 300)
+      .attr("height", 40)
+      .attr("fill", "white");
+
+  for(c=0;c<=10;c++){
+      go.append("line")
+        .attr("x1",x+c*30)
+        .attr("y1",y)
+        .attr("x2",x+c*30)
+        .attr("y2",y + 8)
+        .style("stroke", "#444")
+        .style("stroke-width",2)
+        .style("stroke-linecap", "round");
+      go.append("text")
+        .text(c*10)
+        .attr("x",x+c*30)
+        .attr("y",y + 20)
+        .attr("text-anchor", "middle")
+        .attr("font-size", "12px")
+        .attr("alignment-baseline", "central");
+    }
+
+}
+
+
+var estados = {},
+	  regioes = {},
+	  nacional = {},
+    positionX = 850,
+    to_load = [
+    {
+      id:0,
+      json:"sexo_alunos_por_uf.json",
+      descr:"(%) Homens x Mulheres",
+      positionY: 170,
+      target:"SEXO",
+      key1:1,
+      key2:2
+    },
+    {
+      id:1,
+      json:"qtde_alunos_com_acesso_a_internet.json",
+      descr:"(%) Acesso a Internet [S x N]",
+      positionY: 290,
+      target:"IN_INTERNET",
+      key1:1,
+      key2:0
+    },
+    {
+      id:2,
+      json:"qtde_alunos_por_rural_ou_urbano.json",
+      descr:"(%) Zona Urbana x Zona Rural",
+      positionY: 410,
+      target:"TP_LOCALIZACAO",
+      key1:1,
+      key2:2
+    },
+    {
+      id:3,
+      json:"qtde_alunos_sem_biblioteca.json",
+      descr:"(%) Biblioteca / Sala de Leitura [S x N]",
+      positionY: 530,
+      target:"IN_BIBLIOTECA_SALA_LEITURA",
+      key1:1,
+      key2:0
+    },
+    {
+      id:4,
+      json:"qtde_alunos_sem_abastecimento_de_agua.json",
+      descr:"(%) Água Potável [S x N]",
+      positionY: 650,
+      target:"IN_AGUA_INEXISTENTE",
+      key1:0,
+      key2:1
+    },
+    {
+      id:5,
+      json:"qtde_alunos_sem_energia_eletrica.json",
+      descr:"(%) Energia Elétrica [S x N]",
+      positionY: 770,
+      target:"IN_ENERGIA_INEXISTENTE",
+      key1:0,
+      key2:1
+    }
+  ]
+
+// --- Carrega os 6 arquivos JSON e chama a função de leitura ---
+queue()
+  .defer(d3.json, "sexo_alunos_por_uf.json")
+  .defer(d3.json, "qtde_alunos_com_acesso_a_internet.json")
+  .defer(d3.json, "qtde_alunos_por_rural_ou_urbano.json")
+  .defer(d3.json, "qtde_alunos_sem_biblioteca.json")
+  .defer(d3.json, "qtde_alunos_sem_abastecimento_de_agua.json")
+  .defer(d3.json, "qtde_alunos_sem_energia_eletrica.json")
+  .await(readData);
+
+
+// --- Função de leitura dos arquivos, chama genData para cada ---
+function readData (error, data0, data1, data2, data3, data4, data5) {
+    if (error) return console.error(error);
+    for (var a=0;a<to_load.length;a++){
+      data = eval("data"+a);
+      genData(
+        data,
+        to_load[a].target,
+        to_load[a].key1,
+        to_load[a].key2,
+        to_load[a].id
+      );
+  }
+}
+
+
+// --- Função genData faz a totalização dos dados de cada arquivo ---
+function genData(data, target, key1, key2, id){
+  k1 = "d"+id+"_"+key1
+  k2 = "d"+id+"_"+key2
+  ktotal = "d"+id+"_total"
+
+  // Inicializando as variáveis 
+  for (i=0; i<data.length; i++){
+    obj = data[i];
+    uf = obj.UF;
+    reg = obj.REGIAO_SIGLA;
+    if (!estados[uf]){
+      estados[uf] = {};
+    }
+    estados[uf][k1] = 0;
+    estados[uf][k2] = 0;
+    if (!regioes[reg]){
+      regioes[reg] = {};
+    }
+    regioes[reg][k1] = 0;
+    regioes[reg][k2] = 0;
+    nacional[k1] = 0;
+    nacional[k2] = 0;
+  }
+
+  // Realizando a consolidação dos dados
+  for (i=0; i<data.length; i++){
+    obj = data[i];
+    uf = obj.UF;
+    reg = obj.REGIAO_SIGLA;
+    data_target = obj[target];
+    key = "d"+id+"_"+data_target
+    estados[uf][key] = obj.QTDE;
+    regioes[reg][key] += obj.QTDE;
+    nacional[key] += obj.QTDE
+  }
+
+  // Calculando percentuais por estado
+  for (var uf_key in estados){
+    estados[uf_key][ktotal] = estados[uf_key][k1] + estados[uf_key][k2]
+    estados[uf_key][k1] = (estados[uf_key][k1] / estados[uf_key][ktotal]) * 100
+    estados[uf_key][k2] = 100 - estados[uf_key][k1];
+  }
+
+  // Calculando percentuais por região
+  for (var r_key in regioes){
+    regioes[r_key][ktotal] = regioes[r_key][k1] + regioes[r_key][k2]
+    regioes[r_key][k1] = (regioes[r_key][k1] / regioes[r_key][ktotal]) * 100
+    regioes[r_key][k2] = 100 - regioes[r_key][k1];
+  }
+
+  // Calculando percentual nacional
+  nacional[ktotal] = nacional[k1] + nacional[k2];
+  nacional[k1] = (nacional[k1] / nacional[ktotal]) * 100;
+  nacional[k2] = 100 - nacional[k1];
+
+  // Desenhando boxes
+  drawPercentBox(positionX,to_load[id].positionY,to_load[id].descr);
+  // Desenhando linhas verdes (nacional)
+  drawPercent(positionX,to_load[id].positionY,nacional[k1],"green",false,true);
+}
+
+
+// Função para limpar seleção no mapa
+function clearSelection(){
+	d3.selectAll(".subunit")
+		.classed("active", false);
+	d3.select("#box-title").text("");
+	d3.selectAll(".l")
+		.remove();
+}
+
+// Seleciona região do país
+function selectRegion(d) {
+	if(d3.selectAll(".active")[0].length > 0){
+		clearSelection();
+	} else {
+		var classe = d3.select(this).attr("class");
+		d3.selectAll(".subunit."+classe)
+			.classed("active", true)
+		d3.select("#box-title").text(d.nome);
+    var reg = d.sigla;
+    for (i=0; i<to_load.length; i++){
+      k1 = "d"+to_load[i].id+"_"+to_load[i].key1;
+      drawPercent(positionX,to_load[i].positionY,regioes[reg][k1],"blue",true);
+    };
+  }
+}
+
+// Seleciona estado
+function selectState(d){
+  console.log(d);
+  if(d3.selectAll(".active")[0].length > 0){
+    clearSelection();
+  } else {
+    var id = d3.select(this).attr("id")
+    var obj = d3.select("#"+id)
+    obj.classed("active", !obj.classed("active"));
+    d3.select("#box-title").text(function(){ return d.properties.NAME_1;})
+    var uf = d.properties.HASC_1.substring(3);
+    var reg = regiao.filter(i => i.nome == d.properties.REGIAO)[0].sigla;
+    for (i=0; i<to_load.length; i++){
+      k1 = "d"+to_load[i].id+"_"+to_load[i].key1;
+      drawPercent(positionX,to_load[i].positionY,regioes[reg][k1],"yellow",false);
+      drawPercent(positionX,to_load[i].positionY,estados[uf][k1],"blue",true);
+    };
+
+	}
+}
+
+
+
+</script>

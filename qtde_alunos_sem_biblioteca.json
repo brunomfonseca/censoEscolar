@@ -1,0 +1,488 @@
+[
+	{
+		"QTDE" : 1687661,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 35,
+		"ESTADO" : "São Paulo",
+		"UF" : "SP",
+		"REGIAO" : "SUDESTE",
+		"REGIAO_SIGLA" : "SE"
+	},
+	{
+		"QTDE" : 773764,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 31,
+		"ESTADO" : "Minas Gerais",
+		"UF" : "MG",
+		"REGIAO" : "SUDESTE",
+		"REGIAO_SIGLA" : "SE"
+	},
+	{
+		"QTDE" : 549097,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 33,
+		"ESTADO" : "Rio de Janeiro",
+		"UF" : "RJ",
+		"REGIAO" : "SUDESTE",
+		"REGIAO_SIGLA" : "SE"
+	},
+	{
+		"QTDE" : 466281,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 41,
+		"ESTADO" : "Paraná",
+		"UF" : "PR",
+		"REGIAO" : "SUL",
+		"REGIAO_SIGLA" : "SU"
+	},
+	{
+		"QTDE" : 459633,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 29,
+		"ESTADO" : "Bahia",
+		"UF" : "BA",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 381768,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 43,
+		"ESTADO" : "Rio Grande do Sul",
+		"UF" : "RS",
+		"REGIAO" : "SUL",
+		"REGIAO_SIGLA" : "SU"
+	},
+	{
+		"QTDE" : 340677,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 26,
+		"ESTADO" : "Pernambuco",
+		"UF" : "PE",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 315892,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 23,
+		"ESTADO" : "Ceará",
+		"UF" : "CE",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 311847,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 15,
+		"ESTADO" : "Pará",
+		"UF" : "PA",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 240007,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 52,
+		"ESTADO" : "Goiás",
+		"UF" : "GO",
+		"REGIAO" : "CENTRO-OESTE",
+		"REGIAO_SIGLA" : "CO"
+	},
+	{
+		"QTDE" : 232822,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 42,
+		"ESTADO" : "Santa Catarina",
+		"UF" : "SC",
+		"REGIAO" : "SUL",
+		"REGIAO_SIGLA" : "SU"
+	},
+	{
+		"QTDE" : 224719,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 21,
+		"ESTADO" : "Maranhão",
+		"UF" : "MA",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 163303,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 35,
+		"ESTADO" : "São Paulo",
+		"UF" : "SP",
+		"REGIAO" : "SUDESTE",
+		"REGIAO_SIGLA" : "SE"
+	},
+	{
+		"QTDE" : 157588,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 13,
+		"ESTADO" : "Amazonas",
+		"UF" : "AM",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 143918,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 51,
+		"ESTADO" : "Mato Grosso",
+		"UF" : "MT",
+		"REGIAO" : "CENTRO-OESTE",
+		"REGIAO_SIGLA" : "CO"
+	},
+	{
+		"QTDE" : 129347,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 32,
+		"ESTADO" : "Espírito Santo",
+		"UF" : "ES",
+		"REGIAO" : "SUDESTE",
+		"REGIAO_SIGLA" : "SE"
+	},
+	{
+		"QTDE" : 126577,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 24,
+		"ESTADO" : "Rio Grande do Norte",
+		"UF" : "RN",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 122112,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 25,
+		"ESTADO" : "Paraíba",
+		"UF" : "PB",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 111238,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 22,
+		"ESTADO" : "Piauí",
+		"UF" : "PI",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 110026,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 53,
+		"ESTADO" : "Distrito Federal",
+		"UF" : "DF",
+		"REGIAO" : "CENTRO-OESTE",
+		"REGIAO_SIGLA" : "CO"
+	},
+	{
+		"QTDE" : 103340,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 27,
+		"ESTADO" : "Alagoas",
+		"UF" : "AL",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 93839,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 29,
+		"ESTADO" : "Bahia",
+		"UF" : "BA",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 87392,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 21,
+		"ESTADO" : "Maranhão",
+		"UF" : "MA",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 77688,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 50,
+		"ESTADO" : "Mato Grosso do Sul",
+		"UF" : "MS",
+		"REGIAO" : "CENTRO-OESTE",
+		"REGIAO_SIGLA" : "CO"
+	},
+	{
+		"QTDE" : 72967,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 28,
+		"ESTADO" : "Sergipe",
+		"UF" : "SE",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 66425,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 17,
+		"ESTADO" : "Tocantins",
+		"UF" : "TO",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 59788,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 11,
+		"ESTADO" : "Rondônia",
+		"UF" : "RO",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 57515,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 23,
+		"ESTADO" : "Ceará",
+		"UF" : "CE",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 48132,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 15,
+		"ESTADO" : "Pará",
+		"UF" : "PA",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 39136,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 12,
+		"ESTADO" : "Acre",
+		"UF" : "AC",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 38424,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 16,
+		"ESTADO" : "Amapá",
+		"UF" : "AP",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 34080,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 33,
+		"ESTADO" : "Rio de Janeiro",
+		"UF" : "RJ",
+		"REGIAO" : "SUDESTE",
+		"REGIAO_SIGLA" : "SE"
+	},
+	{
+		"QTDE" : 32155,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 13,
+		"ESTADO" : "Amazonas",
+		"UF" : "AM",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 31605,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 22,
+		"ESTADO" : "Piauí",
+		"UF" : "PI",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 23943,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 26,
+		"ESTADO" : "Pernambuco",
+		"UF" : "PE",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 21025,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 1,
+		"CO_UF" : 14,
+		"ESTADO" : "Roraima",
+		"UF" : "RR",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 19941,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 27,
+		"ESTADO" : "Alagoas",
+		"UF" : "AL",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 16194,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 52,
+		"ESTADO" : "Goiás",
+		"UF" : "GO",
+		"REGIAO" : "CENTRO-OESTE",
+		"REGIAO_SIGLA" : "CO"
+	},
+	{
+		"QTDE" : 15569,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 50,
+		"ESTADO" : "Mato Grosso do Sul",
+		"UF" : "MS",
+		"REGIAO" : "CENTRO-OESTE",
+		"REGIAO_SIGLA" : "CO"
+	},
+	{
+		"QTDE" : 14018,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 51,
+		"ESTADO" : "Mato Grosso",
+		"UF" : "MT",
+		"REGIAO" : "CENTRO-OESTE",
+		"REGIAO_SIGLA" : "CO"
+	},
+	{
+		"QTDE" : 13595,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 31,
+		"ESTADO" : "Minas Gerais",
+		"UF" : "MG",
+		"REGIAO" : "SUDESTE",
+		"REGIAO_SIGLA" : "SE"
+	},
+	{
+		"QTDE" : 11071,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 25,
+		"ESTADO" : "Paraíba",
+		"UF" : "PB",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 9344,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 42,
+		"ESTADO" : "Santa Catarina",
+		"UF" : "SC",
+		"REGIAO" : "SUL",
+		"REGIAO_SIGLA" : "SU"
+	},
+	{
+		"QTDE" : 8832,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 28,
+		"ESTADO" : "Sergipe",
+		"UF" : "SE",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 7986,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 41,
+		"ESTADO" : "Paraná",
+		"UF" : "PR",
+		"REGIAO" : "SUL",
+		"REGIAO_SIGLA" : "SU"
+	},
+	{
+		"QTDE" : 5039,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 11,
+		"ESTADO" : "Rondônia",
+		"UF" : "RO",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 4374,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 12,
+		"ESTADO" : "Acre",
+		"UF" : "AC",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 3432,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 43,
+		"ESTADO" : "Rio Grande do Sul",
+		"UF" : "RS",
+		"REGIAO" : "SUL",
+		"REGIAO_SIGLA" : "SU"
+	},
+	{
+		"QTDE" : 2875,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 24,
+		"ESTADO" : "Rio Grande do Norte",
+		"UF" : "RN",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 2368,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 32,
+		"ESTADO" : "Espírito Santo",
+		"UF" : "ES",
+		"REGIAO" : "SUDESTE",
+		"REGIAO_SIGLA" : "SE"
+	},
+	{
+		"QTDE" : 2229,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 17,
+		"ESTADO" : "Tocantins",
+		"UF" : "TO",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 1970,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 14,
+		"ESTADO" : "Roraima",
+		"UF" : "RR",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 1192,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 16,
+		"ESTADO" : "Amapá",
+		"UF" : "AP",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 390,
+		"IN_BIBLIOTECA_SALA_LEITURA" : 0,
+		"CO_UF" : 53,
+		"ESTADO" : "Distrito Federal",
+		"UF" : "DF",
+		"REGIAO" : "CENTRO-OESTE",
+		"REGIAO_SIGLA" : "CO"
+	}
+]

@@ -1,0 +1,425 @@
+[
+	{
+		"QTDE" : 1850964,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 35,
+		"ESTADO" : "São Paulo",
+		"UF" : "SP",
+		"REGIAO" : "SUDESTE",
+		"REGIAO_SIGLA" : "SE"
+	},
+	{
+		"QTDE" : 786910,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 31,
+		"ESTADO" : "Minas Gerais",
+		"UF" : "MG",
+		"REGIAO" : "SUDESTE",
+		"REGIAO_SIGLA" : "SE"
+	},
+	{
+		"QTDE" : 574241,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 33,
+		"ESTADO" : "Rio de Janeiro",
+		"UF" : "RJ",
+		"REGIAO" : "SUDESTE",
+		"REGIAO_SIGLA" : "SE"
+	},
+	{
+		"QTDE" : 552991,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 29,
+		"ESTADO" : "Bahia",
+		"UF" : "BA",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 473745,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 41,
+		"ESTADO" : "Paraná",
+		"UF" : "PR",
+		"REGIAO" : "SUL",
+		"REGIAO_SIGLA" : "SU"
+	},
+	{
+		"QTDE" : 385016,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 43,
+		"ESTADO" : "Rio Grande do Sul",
+		"UF" : "RS",
+		"REGIAO" : "SUL",
+		"REGIAO_SIGLA" : "SU"
+	},
+	{
+		"QTDE" : 373011,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 23,
+		"ESTADO" : "Ceará",
+		"UF" : "CE",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 363593,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 26,
+		"ESTADO" : "Pernambuco",
+		"UF" : "PE",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 357048,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 15,
+		"ESTADO" : "Pará",
+		"UF" : "PA",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 309249,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 21,
+		"ESTADO" : "Maranhão",
+		"UF" : "MA",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 256117,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 52,
+		"ESTADO" : "Goiás",
+		"UF" : "GO",
+		"REGIAO" : "CENTRO-OESTE",
+		"REGIAO_SIGLA" : "CO"
+	},
+	{
+		"QTDE" : 242166,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 42,
+		"ESTADO" : "Santa Catarina",
+		"UF" : "SC",
+		"REGIAO" : "SUL",
+		"REGIAO_SIGLA" : "SU"
+	},
+	{
+		"QTDE" : 188345,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 13,
+		"ESTADO" : "Amazonas",
+		"UF" : "AM",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 157666,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 51,
+		"ESTADO" : "Mato Grosso",
+		"UF" : "MT",
+		"REGIAO" : "CENTRO-OESTE",
+		"REGIAO_SIGLA" : "CO"
+	},
+	{
+		"QTDE" : 140286,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 22,
+		"ESTADO" : "Piauí",
+		"UF" : "PI",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 133063,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 25,
+		"ESTADO" : "Paraíba",
+		"UF" : "PB",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 131715,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 32,
+		"ESTADO" : "Espírito Santo",
+		"UF" : "ES",
+		"REGIAO" : "SUDESTE",
+		"REGIAO_SIGLA" : "SE"
+	},
+	{
+		"QTDE" : 128598,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 24,
+		"ESTADO" : "Rio Grande do Norte",
+		"UF" : "RN",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 122185,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 27,
+		"ESTADO" : "Alagoas",
+		"UF" : "AL",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 110416,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 53,
+		"ESTADO" : "Distrito Federal",
+		"UF" : "DF",
+		"REGIAO" : "CENTRO-OESTE",
+		"REGIAO_SIGLA" : "CO"
+	},
+	{
+		"QTDE" : 93257,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 50,
+		"ESTADO" : "Mato Grosso do Sul",
+		"UF" : "MS",
+		"REGIAO" : "CENTRO-OESTE",
+		"REGIAO_SIGLA" : "CO"
+	},
+	{
+		"QTDE" : 81799,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 28,
+		"ESTADO" : "Sergipe",
+		"UF" : "SE",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 68654,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 17,
+		"ESTADO" : "Tocantins",
+		"UF" : "TO",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 64683,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 11,
+		"ESTADO" : "Rondônia",
+		"UF" : "RO",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 41682,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 12,
+		"ESTADO" : "Acre",
+		"UF" : "AC",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 38999,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 16,
+		"ESTADO" : "Amapá",
+		"UF" : "AP",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 22974,
+		"IN_AGUA_INEXISTENTE" : 0,
+		"CO_UF" : 14,
+		"ESTADO" : "Roraima",
+		"UF" : "RR",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 8936,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 33,
+		"ESTADO" : "Rio de Janeiro",
+		"UF" : "RJ",
+		"REGIAO" : "SUDESTE",
+		"REGIAO_SIGLA" : "SE"
+	},
+	{
+		"QTDE" : 2931,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 15,
+		"ESTADO" : "Pará",
+		"UF" : "PA",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 2862,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 21,
+		"ESTADO" : "Maranhão",
+		"UF" : "MA",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 2557,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 22,
+		"ESTADO" : "Piauí",
+		"UF" : "PI",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 1828,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 12,
+		"ESTADO" : "Acre",
+		"UF" : "AC",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 1398,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 13,
+		"ESTADO" : "Amazonas",
+		"UF" : "AM",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 1096,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 27,
+		"ESTADO" : "Alagoas",
+		"UF" : "AL",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 1027,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 26,
+		"ESTADO" : "Pernambuco",
+		"UF" : "PE",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 854,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 24,
+		"ESTADO" : "Rio Grande do Norte",
+		"UF" : "RN",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 617,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 16,
+		"ESTADO" : "Amapá",
+		"UF" : "AP",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 522,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 41,
+		"ESTADO" : "Paraná",
+		"UF" : "PR",
+		"REGIAO" : "SUL",
+		"REGIAO_SIGLA" : "SU"
+	},
+	{
+		"QTDE" : 481,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 29,
+		"ESTADO" : "Bahia",
+		"UF" : "BA",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 449,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 31,
+		"ESTADO" : "Minas Gerais",
+		"UF" : "MG",
+		"REGIAO" : "SUDESTE",
+		"REGIAO_SIGLA" : "SE"
+	},
+	{
+		"QTDE" : 396,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 23,
+		"ESTADO" : "Ceará",
+		"UF" : "CE",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 270,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 51,
+		"ESTADO" : "Mato Grosso",
+		"UF" : "MT",
+		"REGIAO" : "CENTRO-OESTE",
+		"REGIAO_SIGLA" : "CO"
+	},
+	{
+		"QTDE" : 184,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 43,
+		"ESTADO" : "Rio Grande do Sul",
+		"UF" : "RS",
+		"REGIAO" : "SUL",
+		"REGIAO_SIGLA" : "SU"
+	},
+	{
+		"QTDE" : 144,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 11,
+		"ESTADO" : "Rondônia",
+		"UF" : "RO",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	},
+	{
+		"QTDE" : 120,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 25,
+		"ESTADO" : "Paraíba",
+		"UF" : "PB",
+		"REGIAO" : "NORDESTE",
+		"REGIAO_SIGLA" : "NE"
+	},
+	{
+		"QTDE" : 84,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 52,
+		"ESTADO" : "Goiás",
+		"UF" : "GO",
+		"REGIAO" : "CENTRO-OESTE",
+		"REGIAO_SIGLA" : "CO"
+	},
+	{
+		"QTDE" : 21,
+		"IN_AGUA_INEXISTENTE" : 1,
+		"CO_UF" : 14,
+		"ESTADO" : "Roraima",
+		"UF" : "RR",
+		"REGIAO" : "NORTE",
+		"REGIAO_SIGLA" : "NO"
+	}
+]
